@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#e07b39">
+  <meta name="description" content="Alacena Familiar — gestión de inventario doméstico con escaneo de facturas">
+  <title>Alacena Familiar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+
+    <header id="topbar">
+      <button id="btn-back" class="btn-back hidden" aria-label="Volver">←</button>
+      <h1 id="screen-title">Alacena</h1>
+    </header>
+
+    <main id="screen-content" aria-live="polite"></main>
+
+    <nav id="bottom-nav" aria-label="Navegación principal">
+      <button class="nav-btn active" data-screen="pantry" aria-label="Alacena">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Alacena</span>
+      </button>
+      <button class="nav-btn" data-screen="scan" aria-label="Escanear factura">
+        <span class="nav-icon">📷</span>
+        <span class="nav-label">Escanear</span>
+      </button>
+      <button class="nav-btn" data-screen="receipts" aria-label="Facturas">
+        <span class="nav-icon">🧾</span>
+        <span class="nav-label">Facturas</span>
+      </button>
+      <button class="nav-btn" data-screen="prices" aria-label="Precios">
+        <span class="nav-icon">🔍</span>
+        <span class="nav-label">Precios</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
